@@ -15,4 +15,11 @@ class GoAppRouter implements AppRouter {
 
   @override
   void pop<T>(T result) => goRouter.pop<T>(result);
+
+  @override
+  void pushReplacement(String routeName, {StringMap? parameters}) =>
+      goRouter.pushReplacementNamed(
+        routeName,
+        queryParameters: parameters ?? {},
+      );
 }
