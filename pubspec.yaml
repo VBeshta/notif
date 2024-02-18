@@ -36,6 +36,8 @@ dependencies:
   # sentry_flutter: ^7.14.0
   # https://pub.dev/packages/shared_preferences
   shared_preferences: ^2.2.2
+  flutter_svg: ^2.0.9
+  equatable: ^2.0.5
 
 
 dev_dependencies:
@@ -58,3 +60,4 @@ flutter:
 
   assets:
     - assets/images/
+    - assets/icons/

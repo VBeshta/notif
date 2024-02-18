@@ -7,4 +7,9 @@ abstract interface class AppRouter {
   });
 
   void pop<T>(T result);
+
+  void pushReplacement(
+    String routeName, {
+    StringMap? parameters,
+  });
 }
