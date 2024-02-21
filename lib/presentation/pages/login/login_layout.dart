@@ -1,5 +1,5 @@
 import 'dart:async';
-
+import 'package:rive/rive.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:notif/core/context_extension.dart';
@@ -96,6 +96,14 @@ class _LoginBodyState extends State<LoginBody> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
+              const SizedBox(
+                width: 300,
+                height: 300,
+                child: RiveAnimation.asset(
+                  'assets/animations/cat_bread.riv',
+                  stateMachines: ['loading'],
+                ),
+              ),
               if (!timeFromFormEqualsCurrentTime && _enteredTime.length == 4)
                 Container(
                   decoration: const BoxDecoration(color: Color(0xFFF3F3F4)),

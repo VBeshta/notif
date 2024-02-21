@@ -53,6 +53,8 @@ dev_dependencies:
   freezed: ^2.4.6
   # https://pub.dev/packages/json_serializable
   json_serializable: ^6.7.1
+  # https://pub.dev/packages/rive
+  rive: ^0.12.4
 
 flutter:
   generate: true
@@ -61,3 +63,4 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/animations/
